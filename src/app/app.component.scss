@@ -1,0 +1,61 @@
+.nav-menu a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.title_logo {
+    font-size: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Train One', cursive; */
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+
+
+/* NAVEGACIÓN */
+.nav-main {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 60px;
+    padding: 20px 0px;
+}
+
+.nav-brand {
+    width: 50px;
+    height: 38px;
+    margin-right: 10px;
+}
+
+.logo_marca {
+
+}
+
+.nav-menu {
+    display: flex;
+    flex: 1;
+    margin-left: 20px;
+    margin-top: 12px;
+}
+
+.nav-menu li {
+    padding: 10px;
+}
+.nav-menu li a:hover {
+    border-bottom: 2px solid white;
+    padding-bottom: 3px;
+}
+
+
+@media (max-width:480px){
+    .title_logo {
+        font-size: 15px;
+    }
+}
