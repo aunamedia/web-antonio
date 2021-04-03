@@ -5,7 +5,6 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    // "deploy": "ng deploy --base-href=https://aunamedia.github.io/web-antonio/",
     "deploy": "ng build --prod --base-href=/web-antonio/",
     "test": "ng test",
     "lint": "ng lint",
