@@ -28,9 +28,6 @@ jobs:
           echo ------------------
           echo INSTALADO COMPLETO
           echo ------------------
-          ng v
-          echo ------------------
-          ng deploy --base-href="https://aunamedia.github.io/web-antonio/"
           echo ------------------
           npm run-script deploy
       - name: Deploy
