@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'web-antonio3';
-  n: Number = fn();
+  title = 'web-antonio';
+  // n: Number = fn();
 }
 
 function fn():number {
