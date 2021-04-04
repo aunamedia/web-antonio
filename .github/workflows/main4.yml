@@ -16,18 +16,20 @@ jobs:
       - name: Checkout
         # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
         uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2
         with:
-          node-version: '10.x'
+          node-version: '12'
       - uses: actions/cache@v1
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+      - run: npm install
+      - run: npm test
       - name: Build
+          # npm install
         run: |
-          npm install
           echo ------------------
           echo INSTALADO COMPLETO
           echo ------------------
